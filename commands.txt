@@ -1,0 +1,11 @@
+Create a deployment
+- kubectl create deployment hello-node --image=k8s.gcr.io/echoserver:1.4
+
+View deployment
+- kubectl get deployments
+
+View cluster event
+- kb get event
+
+Create a service
+- kb expose deployment <hello-node> --type=Loadbalancer --port=8080
